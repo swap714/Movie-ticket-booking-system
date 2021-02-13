@@ -1,0 +1,20 @@
+
+
+<div class="container  ">
+  <ng-container *ngFor="let show of shows">
+    <div class="row table border my-3">
+
+      <div class="col-md-3  text-primary ">{{show.theatrename}}</div>
+      <div class="col-md-9 my-2 ">
+        <ng-container *ngFor="let timing of show.showlist">
+
+          <button type="button" class="btn btn-outline-primary">{{timing}}</button>
+
+        </ng-container>
+      </div>
+
+
+    </div>
+  </ng-container>
+
+</div>

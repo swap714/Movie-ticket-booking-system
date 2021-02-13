@@ -1,0 +1,42 @@
+
+
+<div class="container">
+  <div class="row mt-5">
+    <ng-container *ngFor="let movie of movies" >
+
+
+  <div class="col-md-3 d-flex my-2" >
+  <div class="card" routerLink="/buyticket" >
+    <div class="card-body  text-dark" style="background-color: #e3f2fd; " >
+      <h5 class="card-title text-dark">{{movie.title}}</h5>
+      <h6 class="card-subtitle text-dark mb-1">Type : {{movie.type}}</h6>
+      <h6 class="card-subtitle text-dark">Genre : {{movie.genre}}</h6>
+
+      <p class="card-text text-dark">Release Date : {{movie.releasedate}}</p>
+      <p class="card-text text-dark">Duration : {{movie.duration}}</p>
+
+      <p class="card-text mb-2">Description : {{movie.description}}</p>
+
+    </div>
+  </div>
+  </div>
+
+
+</ng-container>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>br
